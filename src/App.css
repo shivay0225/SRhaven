@@ -72,7 +72,7 @@ a {
 
     position: relative;
 
-    background-image: url("/SRhaven/src/assets/images/ht-img1.jpg");
+    background-image: url("assets/images/ht-img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: contain;

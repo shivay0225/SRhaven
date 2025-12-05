@@ -47,7 +47,7 @@ const Header  = () =>{
       <div className="logo">
         <img
           className="logoimg"
-          src="/SRhaven/src/assets/images/logo4.png"
+          src="assets/images/logo4.png"
           alt=""
         />
       </div>
@@ -101,7 +101,7 @@ const Header  = () =>{
           <div className="logo2">
             <img
               className="logoimg2"
-              src="/SRhaven/src/assets/images/logo4.png"
+              src="assets/images/logo4.png"
               alt=""
             />
           </div>

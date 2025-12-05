@@ -65,7 +65,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="/SRhaven/src/assets/images/hotels/masouri.jpg"
+              src="assets/images/hotels/masouri.jpg"
               className="Manaliimg"
               alt="..."
             />
@@ -85,7 +85,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="/SRhaven/src/assets/images/hotels/dharamshalaimg.jpg"
+              src="assets/images/hotels/dharamshalaimg.jpg"
               className="Manaliimg"
               alt="..."
             />
@@ -105,7 +105,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="/SRhaven/src/assets/images/hotels/dhalousi.jpg"
+              src="assets/images/hotels/dhalousi.jpg"
               className="Manaliimg"
               alt="..."
             />
@@ -125,7 +125,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="/SRhaven/src/assets/images/hotels/nainital.jpg"
+              src="assets/images/hotels/nainital.jpg"
               className="Manaliimg"
               alt="..."
             />
@@ -145,7 +145,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="/SRhaven/src/assets/images/hotels/darjleeng.jpg"
+              src="assets/images/hotels/darjleeng.jpg"
               className="Manaliimg"
               alt="..."
             />
