@@ -404,16 +404,15 @@ border-left: 1px solid #B9A47B;
 
 .slider{
 
-   display: block;
-
-   gap: 10px;
+   width: auto;
+   height: auto;
 
 }
 
 .card{
 
-    width: 100%!important;
-    height: 450px !important;
+    width:  900px !important;
+    height: 400px    !important;
 }
 
 .Manaliimg{

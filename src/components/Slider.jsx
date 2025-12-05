@@ -18,7 +18,7 @@ const MySlider = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 2,
           infinite: true,
           dots: true
         }
@@ -33,6 +33,13 @@ const MySlider = () => {
       },
       {
         breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+       {
+        breakpoint: 350,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
