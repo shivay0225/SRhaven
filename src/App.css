@@ -360,18 +360,7 @@ border-left: 1px solid #B9A47B;
        
     }
     
-    .card{
-        width: 100%;
-        height: auto;
-        
- }
-
-.card-img{
-
-    width: 100%;
-    height: auto;
-}
-
+ 
    .Manaliimg{
 
  width: 100%;
@@ -413,16 +402,24 @@ border-left: 1px solid #B9A47B;
 
 
 
-.slider1{
+.slider{
 
-   
+   display: block;
+
+   gap: 10px;
 
 }
 
-.ours{
+.card{
 
-    margin-top:0;
-margin-bottom: 0!important;
+    width: 100%!important;
+    height: 450px !important;
+}
+
+.Manaliimg{
+
+    height: 400px!important ;
+    width: auto !important;
 }
 
 

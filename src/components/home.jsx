@@ -160,8 +160,13 @@ const Home = () =>{
         </div>
       </div> */}
       
-           <MySlider/>
+        
 
+    </div>
+
+    <div class="slider">
+
+         <MySlider/>
     </div>
   </div>
 </div>

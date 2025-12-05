@@ -10,7 +10,7 @@ const MySlider = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3.3,
     slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
@@ -26,7 +26,7 @@ const MySlider = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1
         }
@@ -43,7 +43,9 @@ const MySlider = () => {
   
   return ( 
     <>
-    <Slider {...settings}>
+   
+    <Slider   {...settings}>
+      
         <div className="col">
         <div
           className="card  bg-transparent "
@@ -165,6 +167,7 @@ const MySlider = () => {
         </div>
       </div>
     </Slider>
+   
     </>
   )
     
