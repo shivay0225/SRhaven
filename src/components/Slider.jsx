@@ -5,12 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const MySlider = () => {
+
     var settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
       {
@@ -25,7 +26,7 @@ const MySlider = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.5,
           slidesToScroll: 1,
           initialSlide: 1
         }
@@ -43,24 +44,125 @@ const MySlider = () => {
   return ( 
     <>
     <Slider {...settings}>
-      <div>
-        <img src="/images/hotels/Manali.jpg" className="img-fluid"/>
+        <div className="col">
+        <div
+          className="card  bg-transparent "
+          style={{ width: "24rem", height: 510}}
+        >
+          <div className="card-img">
+            <img
+              src="/images/hotels/Manali.jpg"
+              className="Manaliimg"
+              alt="..." 
+            />
+          </div>
+          <div className="card-body">
+            <p className="p1">
+              {" "}
+              The SR Haven <br/> Manali (Himacahal Pradesh){""}
+            </p>
+          </div>
+        </div>
       </div>
-      
-      <div>
-        <img src="/images/hotels/img1.jpg" className="img-fluid"/>
+      <div className="col">
+        <div
+          className="card bg-transparent"
+          style={{ width: "24rem", height: 510 }}
+        >
+          <div className="card-img">
+            <img
+              src="/images/hotels/masouri.jpg"
+              className="Manaliimg"
+              alt="..."
+            />
+          </div>
+          <div className="card-body">
+            <p className="p1">
+              {""}
+              The SR Haven <br /> Masoori (Uttarakhand)
+            </p>
+          </div>
+        </div>
       </div>
-      
-      <div>
-        <img src="/images/hotels/img3.jpg" className="img-fluid"/>
+      <div className="col">
+        <div
+          className="card bg-transparent"
+          style={{ width: "24rem", height: 510}}
+        >
+          <div className="card-img">
+            <img
+              src="/images/hotels/dharamshalaimg.jpg"
+              className="Manaliimg"
+              alt="..."
+            />
+          </div>
+          <div className="card-body ">
+            <p className="p1">
+              {" "}
+              The SR Haven <br /> Dharamshala (HimachalPradesh)
+            </p>
+          </div>
+        </div>
       </div>
-      
-      <div>
-        <img src="/images/hotels/Manali.jpg" className="img-fluid"/>
+      <div className="col">
+        <div
+          className="card bg-transparent"
+          style={{ width: "24rem", height: 510 }}
+        >
+          <div className="card-img">
+            <img
+              src="/images/hotels/dhalousi.jpg"
+              className="Manaliimg"
+              alt="..."
+            />
+          </div>
+          <div className="card-body">
+            <p className="p1">
+              {""}
+              The SR Haven <br /> Dhalousie (HimachalPradesh)
+            </p>
+          </div>
+        </div>
       </div>
-      
-      <div>
-        <img src="/images/hotels/Manali.jpg" className="img-fluid"/>
+      <div className="col">
+        <div
+          className="card bg-transparent"
+          style={{ width: "24rem", height: 510 }}
+        >
+          <div className="card-img">
+            <img
+              src="/images/hotels/nainital.jpg"
+              className="Manaliimg"
+              alt="..."
+            />
+          </div>
+          <div className="card-body ">
+            <p className="p1">
+              {" "}
+              The SR Haven <br /> Nainital – Bhimtal- (Uttarakhand)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div
+          className="card bg-transparent "
+          style={{ width: "24rem", height: 510 }}
+        >
+          <div className="card-img">
+            <img
+              src="/images/hotels/darjleeng.jpg"
+              className="Manaliimg"
+              alt="..."
+            />
+          </div>
+          <div className="card-body">
+            <p className="p1">
+              {""}
+              The SR Haven <br/> Darjeeling (West Bengal)
+            </p>
+          </div>
+        </div>
       </div>
     </Slider>
     </>

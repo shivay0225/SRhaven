@@ -1,3 +1,4 @@
+import Slider from "react-slick"
 import MySlider from "./Slider"
 const Home = () =>{
 
@@ -5,26 +6,26 @@ const Home = () =>{
     return(
 
         <>
-        <MySlider/>
+        
         <div className="container-fluid cn3">
   <div className="container">
-    <div className="lux-heading">
-      <div className="mt-5">
-        <h1 className="mb-0"> Our Hotels</h1>
-        <span className="lux-line ">
+   
+    <div
+      className="row slider1"
+    >
+       <div className="lux-heading ourhotels ">
+      <div className="mt-5 ">
+        <h1 className=" our mb-0"> Our Hotels</h1>
+        <span className="lux-line  ">
           {" "}
           <img
             className="hrimg"
-            src="/SRhaven/src/assets/images/hrline.png"
+            src="/images/hrline.png"
             alt=""
           />
         </span>
       </div>
     </div>
-    <div
-      className="row gap-3
-      "
-    >
       <p className="lux-heading2"> Destinations</p>
       {/* <div class="col">
               <div class="card" style="width: 20rem; ">
@@ -38,7 +39,7 @@ const Home = () =>{
               </div>
 
           </div> */}
-      <div className="col">
+      {    /* <div className="col">
         <div
           className="destinations bg-transparent "
           style={{ width: "24rem", height: 510 }}
@@ -53,7 +54,7 @@ const Home = () =>{
           <div className="card-body ">
             <p className="p1">
               {" "}
-              The SR Haven <br /> Manali (Himacahal Pradesh){" "}
+              The SR Haven <br/> Manali (Himacahal Pradesh){" "}
             </p>
           </div>
         </div>
@@ -65,7 +66,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="assets/images/hotels/masouri.jpg"
+              src="/images/hotels/masouri.jpg"
               className="Manaliimg"
               alt="..."
             />
@@ -85,7 +86,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="assets/images/hotels/dharamshalaimg.jpg"
+              src="/images/hotels/dharamshalaimg.jpg"
               className="Manaliimg"
               alt="..."
             />
@@ -105,7 +106,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="assets/images/hotels/dhalousi.jpg"
+              src="/images/hotels/dhalousi.jpg"
               className="Manaliimg"
               alt="..."
             />
@@ -125,7 +126,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="assets/images/hotels/nainital.jpg"
+              src="/images/hotels/nainital.jpg"
               className="Manaliimg"
               alt="..."
             />
@@ -145,7 +146,7 @@ const Home = () =>{
         >
           <div className="card-img">
             <img
-              src="assets/images/hotels/darjleeng.jpg"
+              src="/images/hotels/darjleeng.jpg"
               className="Manaliimg"
               alt="..."
             />
@@ -157,7 +158,10 @@ const Home = () =>{
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
+      
+           <MySlider/>
+
     </div>
   </div>
 </div>

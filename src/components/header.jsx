@@ -47,7 +47,7 @@ const Header  = () =>{
       <div className="logo">
         <img
           className="logoimg"
-          src="assets/images/logo4.png"
+          src="/images/logo4.png"
           alt=""
         />
       </div>
@@ -101,7 +101,7 @@ const Header  = () =>{
           <div className="logo2">
             <img
               className="logoimg2"
-              src="assets/images/logo4.png"
+              src="/images/logo4.png"
               alt=""
             />
           </div>
@@ -159,7 +159,7 @@ const Header  = () =>{
           <option>NEW50</option>
         </select>
       </div>
-      <button className="book-btn  ">BOOK</button>
+      <button className="book-btn">BOOK</button>
     </div>
   </div>
 </div>
