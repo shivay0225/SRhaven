@@ -1,42 +1,424 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+/* :start */
+
+.menu-bar {
+
+    height: 600px;
+    width: 20%;
+    margin-top: 5px
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.nav-color {
+
+    background-color: transparent;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-color:hover {
+
+    background-color: #f7f4e5;
+    transition: 0.4s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+a {
+
+    text-decoration: none !important;
+    color: inherit !important;
+}
+/* 
+.left-item{
+
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+} */
+
+
+
+.logoimg {
+    height: 70px;
+    width: 90px;
+
 }
 
-.card {
-  padding: 2em;
+.logoimg:hover {
+
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+    transform: scale(1.05);
 }
 
-.read-the-docs {
-  color: #888;
+.bt-book {
+
+    background-color: #ad2132;
+
+    color: white;
+    border: 0;
+    padding: 10px 30px 10px 30px;
+
 }
+
+
+.d1 {
+
+    position: absolute;
+    left: 280%;
+
+}
+
+
+.cn1 {
+
+    position: relative;
+
+    background-image: url("/SRhaven/src/assets/images/ht-img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    background-position: center;
+
+    height: 100vh;
+
+
+}
+
+.cn2 {
+
+    position: absolute;
+    left: 8.5%;
+    bottom: 4%;
+
+
+}
+
+
+.booking-bar {
+    background: rgba(169, 165, 152, 0.208);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    padding: 15px;
+
+
+}
+
+.booking-item {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+       padding-right :10px;
+
+}
+
+.logoimg2 {
+
+
+    height: 28px;
+    width: 29px;
+
+}
+
+.booking-list {
+    
+    padding: 10px 5px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #e9e2e2;
+    /* black text */
+    outline: none;
+    font-weight: 600;
+     padding-right :90px;
+
+
+
+}
+
+.booking-list-2 {
+    padding: 10px 5px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #e9e2e2;
+    /* black text */
+    outline: none;
+    font-weight: 600;
+     padding-right :90px;
+    
+}
+
+.booking-list-3 {
+    padding: 10px 5px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #e9e2e2;
+    /* black text */
+    outline: none;
+    font-weight: 600;
+     padding-right :90px;
+}
+
+.booking-list-4 {
+    padding: 10px 10px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #e9e2e2;
+    /* black text */
+    outline: none;
+    font-weight: 600;
+     padding-right :60px;
+}
+
+
+.book-btn {
+    padding: 10px 46px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #817064c6;
+    color: #e9e2e2;
+
+}
+
+.list-box-2 {
+
+}
+
+.list-box-1 {
+   display: flex;
+   
+}
+
+
+.logo2 {
+
+
+  
+
+
+}
+
+.icon1 {
+
+  
+  
+}
+
+.list-box-3 {
+  
+
+}
+
+.icon2 {
+
+   
+ 
+}
+
+.cn3{
+/* background: radial-gradient(circle, #FFFFFF 0%, #F9F5EF 100%); */
+
+/* background-color: #EDEFF1; */
+/* background-color: #F7F9F4; */
+/* background-color: #F7F4EF; */
+background-color: #f5f3f0;
+/* background-color: #EEF2F4   ; */
+
+
+}
+
+
+.lux-heading {
+    text-align: center;
+    padding: 40px 0;
+    font-family: "Times New Roman", serif;
+}
+
+.lux-heading h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #3e4550;
+    margin-bottom: 20px;
+}
+
+.lux-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;  
+}
+
+.hrimg{
+   
+    width: 60%;
+    height: 50px;
+}
+
+.lux-heading2{
+
+  font-size: 1.9rem;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #00000089 ;
+
+}
+
+.Manaliimg{
+
+ width: 100%;
+  height: 400px;
+  object-fit: cover;
+
+}
+
+
+.card-img{
+       width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.card-body .p1{
+
+    font-size: 1.3rem;
+
+}
+
+.card-img{
+
+border-radius: 0 !important;
+   
+}
+
+
+.card-body{
+
+border-left: 1px solid #B9A47B;
+  border-right: 1px solid #B9A47B;
+  border-bottom: 1px solid #B9A47B;
+  margin: 0;
+    font-family: serif; /* Use an elegant font */
+    color: #4C4B4A;
+   
+}
+
+
+
+
+
+     /* responisve */
+
+@media only screen and (max-width:768px) {
+    .logoimg {
+        width: 60px;
+        height: auto;
+        /* margin-left: 60px; */
+    }
+
+    .cn1 {
+
+        height: 90vh;
+    }
+
+    .bt-book {
+
+        padding: 5px 10px;
+        height: auto;
+    }
+ 
+    .icon-bar{
+
+        width: 31px;
+        height: 31px;
+    }
+    .signup {
+        width: 30px;
+        height: auto;
+
+    }
+
+     /* booking bar */
+    .cn2 {
+
+        position: absolute;
+        height: auto;
+        width: 100%;
+   
+        top: 100%;
+     
+    }
+
+    .booking-bar {
+        background: rgba(0, 0, 0, 0.405);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+     
+    
+        display: block;
+        width: 90% ;
+        height: auto;
+        border-radius: 15px;
+     
+    }
+
+    .booking-item {
+          
+        
+    }
+
+    .booking-list {
+
+        /* padding: 7px 40px; */
+          padding-right: 50px;  
+
+    }
+
+    .booking-list-2 {
+
+        /* padding: 7px 40px; 
+        margin-top: 2px; */
+          padding-right: 10px;  
+    }
+
+    .booking-list-3 {
+        /* padding: 7px 40px; */
+          padding-right: 26px;  
+       
+    }
+    
+    .logoimg2 {
+         
+        /* margin-bottom: 7px;
+        height: 20px;
+        width: 25px; */
+    }
+
+
+    .icon1 {
+        
+    
+        
+    
+        /* height: 2px; */
+    }
+
+ 
+    .icon2 {
+        
+        /* margin-top: 4px; */
+      
+    }
+
+    .book-btn {
+        
+        /* padding: 8px 46px;
+        margin-left: 7px; */
+    }
+
+
+}
+
+
+
