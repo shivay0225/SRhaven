@@ -51,9 +51,9 @@ const Header  = () =>{
           alt=""
         />
       </div>
-      <div className="col-3  justify-content-end">
-        <div className="d-flex align-items-center  justify-content-end gap-3">
-          <div className="d-flex  align-items-center">
+      <div className="col-lg-3 col-2  justify-content-end">
+        <div className=" right-item d-flex align-items-center  justify-content-end gap-lg-4 gap-2">
+          <div className=" d-flex  align-items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon-bar"
@@ -64,7 +64,7 @@ const Header  = () =>{
             >
               <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
             </svg>{" "}
-            <span> Signup</span>
+            <span class="signup"> Signup</span>
           </div>
           <button className="bt-book"> Book </button>
         </div>
@@ -94,7 +94,7 @@ const Header  = () =>{
       </div>
     </div>
   </nav>
-  <div className="container cn2  d-flex justify-content-between align-items-center">
+  <div className=" container cn2  d-flex justify-content-between align-items-center">
     <div className="booking-bar d-lg-flex  py-2  py-4 d-block  justify-content-between align-items-center">
       <div className="booking-item my-lg-0 my-3 ">
         <div className="list-box-1 d-flex px-3 py-lg-0 py-2 px-3 align-items-center">

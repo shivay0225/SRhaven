@@ -169,7 +169,30 @@ const Home = () =>{
          <MySlider/>
     </div>
   </div>
+
+
+    <div className="container-fluid ">
+    <div className="row cn4">
+
+      <div className="col offers  text-center">
+         <p >Special Offers </p>
+         <p class="p2">  Enjoy specially curated offers to enhance your experience at Trident Hotels. </p>
+         <p>  </p>
+         <button className=" btn-explore">
+            Explore
+         </button>
+         
+      </div>
+
+     
+    </div>
+
+    
+
+  </div>
 </div>
+
+
 
         </>
     )
