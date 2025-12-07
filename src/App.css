@@ -75,7 +75,7 @@ a {
 .cn1 {
 
     position: relative;
-  background-image: url("/images/hotels/hotel4img.jpg");
+  background-image: url("/images/hotels/hotelimg6.jpg");
     /* background-image: url("/images/hotels/hotel3.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -370,19 +370,16 @@ margin-top: 490px;
     .logoimg {
         width: 60px;
         height: auto;
-        /* margin-left: 60px; */
+        /* margin-left: 60px; */  
     }
 
     .cn1 {
 
        /* background-image: url("/images/hotels/hotel3.jpg"); */
        /* background-image: url("/images/hotels/hotel4img.jpg"); */
-          background-image: url("/images/hotels/hotelimg4.png");
+          background-image: url("/images/hotels/hotelimg6.jpg");
           background-position: center;
           background-size: cover;
-        
-
-         
           height: 90vh;
     }
 
