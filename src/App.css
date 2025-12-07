@@ -75,8 +75,8 @@ a {
 .cn1 {
 
     position: relative;
-
-    background-image: url("/images/hotels/hotel3.jpg");
+  background-image: url("/images/hotels/hotel4img.jpg");
+    /* background-image: url("/images/hotels/hotel3.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: contain;
@@ -374,7 +374,8 @@ margin-top: 490px;
     }
 
     .cn1 {
-       background-image: url("/images/hotels/hotel3.jpg");
+       /* background-image: url("/images/hotels/hotel3.jpg"); */
+       background-image: url("/images/hotels/hotel4img.jpg");
         height: 90vh;
     }
 
