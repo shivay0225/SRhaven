@@ -7,7 +7,7 @@ const Header  = () =>{
         <>
         
         <div className="div cn1">
-  <nav className="navbar nav-color">
+  <nav className="navbar nav-color fixed-top">
     <div className=" container-fluid   d-flex justify-content-between w-100 align-items-center ">
       <div className="d-flex align-items-center justify-content-center">
         <div className="d-flex align-items-center ">
@@ -163,6 +163,9 @@ const Header  = () =>{
     </div>
   </div>
 </div>
+
+
+
 
         </>
     )
