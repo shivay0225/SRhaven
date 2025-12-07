@@ -10,7 +10,7 @@ const MySlider = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3.3,
+    slidesToShow: 1,
     slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
@@ -30,14 +30,8 @@ const MySlider = () => {
           slidesToScroll: 1,
           initialSlide: 1
         }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
       }
+    
     ]
   };
   
