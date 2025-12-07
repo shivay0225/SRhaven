@@ -173,4 +173,8 @@ const MySlider = () => {
     
 
 }
+
+
+
 export default MySlider
+
