@@ -1,46 +1,47 @@
-
+import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Function to determine slidesToShow based on current window width
+const getSlidesToShow = () => {
+  if (typeof window === "undefined") return 1; // Default for server-side rendering
+  const width = window.innerWidth;
+  if (width >= 1024) return 3; // Laptop/Desktop
+  if (width >= 768) return 3;  // Tablet
+  return 1;                   // Mobile (default)
+};
+
+
+
 const MySlider = () => {
 
-    var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 2,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1
-        }
-      }
-    
-    ]
-  };
+  const [slidesToShow, setSlidesToShow] = useState(getSlidesToShow());
+
+    useEffect(() => {
+        const handleResize = () => setSlidesToShow(getSlidesToShow());
+        window.addEventListener("resize", handleResize);
+        // Run on mount as well
+        handleResize(); 
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+        const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: slidesToShow, // Use the state variable here
+        slidesToScroll: 1,
+        // Remove the 'responsive' array entirely as we are handling this manually
+    };
+
   
   return ( 
     <>
-   
+   <div className="slider">
     <Slider   {...settings}>
       
-        <div className="col">
+        <div className="">
         <div
           className="card  bg-transparent "
           style={{ width: "24rem", height: 510}}
@@ -60,7 +61,7 @@ const MySlider = () => {
           </div>
         </div>
       </div>
-      <div className="col">
+      <div className=" ">
         <div
           className="card bg-transparent"
           style={{ width: "24rem", height: 510 }}
@@ -80,7 +81,7 @@ const MySlider = () => {
           </div>
         </div>
       </div>
-      <div className="col">
+      <div className="">
         <div
           className="card bg-transparent"
           style={{ width: "24rem", height: 510}}
@@ -100,7 +101,7 @@ const MySlider = () => {
           </div>
         </div>
       </div>
-      <div className="col">
+      <div className="">
         <div
           className="card bg-transparent"
           style={{ width: "24rem", height: 510 }}
@@ -120,7 +121,7 @@ const MySlider = () => {
           </div>
         </div>
       </div>
-      <div className="col">
+      <div className="">
         <div
           className="card bg-transparent"
           style={{ width: "24rem", height: 510 }}
@@ -140,7 +141,7 @@ const MySlider = () => {
           </div>
         </div>
       </div>
-      <div className="col">
+      <div className="">
         <div
           className="card bg-transparent "
           style={{ width: "24rem", height: 510 }}
@@ -161,7 +162,7 @@ const MySlider = () => {
         </div>
       </div>
     </Slider>
-
+</div>
   
    
     </>

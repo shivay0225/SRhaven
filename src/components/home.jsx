@@ -11,7 +11,7 @@ const Home = () => {
         <div className="container">
 
           <div
-            className="row slider1"
+            className="row "
           >
             <div className="lux-heading ourhotels ">
               <div className="mt-5 ">
