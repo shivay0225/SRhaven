@@ -322,6 +322,30 @@ background-position: center;
     z-index: 1; /* overlay above image */
 }
 
+
+.cn5 {
+    margin-top: 120px;
+    height: 800px;
+    background-image: url("/images/hotels/c1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* IMPORTANT */
+    overflow: hidden;
+}
+
+/* Dark overlay */
+.cn5::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);  /* increase this to 0.40–0.45 to make more dull */
+    z-index: 1; /* overlay above image */
+}
+
 .offers{
 
   position: relative;
@@ -345,7 +369,99 @@ background-position: center;
     font-size: 1.7rem;
     
 }
+
+
+.offers1{
+
+  position: relative;
+    z-index: 2; /* text ABOVE overlay */
+    margin-top: 30px;
+}
+
+
+.offers1 p {
+
+   position: relative;
+    z-index: 2; /* text ABOVE overlay */
+    font-size: 4rem;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.offers1 .p2{
+      
+    font-size: 1.2rem;
+    margin-left: 174px;
+
+    
+}
+
+
+
+.cn6 {
+    margin-top: 120px;
+    height: 800px;
+    background-image: url("/images/hotels/h1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* IMPORTANT */
+    overflow: hidden;
+}
+
+/* Dark overlay */
+.cn6::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);  /* increase this to 0.40–0.45 to make more dull */
+    z-index: 1; /* overlay above image */
+}
+
+.offers2{
+
+  position: relative;
+    z-index: 2; /* text ABOVE overlay */
+    margin-top: 25px;
+}
+
+
+.offers2 p {
+
+   position: relative;
+    z-index: 2; /* text ABOVE overlay */
+    font-size: 4rem;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.offers2 .p2{
+      
+    font-size: 1.3rem;
+    margin-left: 172px;
+    
+}
+
 .btn-explore{
+
+
+margin-top: 490px;
+  
+    padding: 6px 43px 8px 43px ;
+    color: rgb(173, 33, 50);
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color:#d5d6d7;
+      border: 0;
+    z-index: 2; /* text ABOVE overlay */
+
+}
+.btn-explore1{
 
 
 margin-top: 490px;
@@ -374,6 +490,15 @@ margin-top: 490px;
         width: 60px;
         height: auto;
         /* margin-left: 60px; */  
+    }
+    .nav-color{
+
+        width: 96%;
+    }
+
+    .icone{
+
+        font-size: 2.3rem;
     }
 
     .cn1 {
@@ -524,6 +649,59 @@ margin-top: 490px;
 font-size: 1.2rem;
 width: 100%;
 
+}
+
+.offers1{
+
+  position: relative;
+    z-index: 2; /* text ABOVE overlay */
+    margin-top: 30px;
+}
+
+
+.offers1 p {
+
+   position: relative;
+    z-index: 2; /* text ABOVE overlay */
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.offers1 .p2{
+      margin-top: 6px;
+    font-size: 0.6rem;
+    margin-left: 10px;
+
+    
+}
+
+
+.offers2{
+
+  position: relative;
+    z-index: 2; /* text ABOVE overlay */
+    margin-top: 30px;
+}
+
+
+.offers2 p {
+
+   position: relative;
+    z-index: 2; /* text ABOVE overlay */
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.offers2 .p2{
+      margin-top: 10px;
+    font-size: 0.6rem;
+    margin-left: 10px;
+
+    
 }
 
 

@@ -18,7 +18,7 @@ const Header  = () =>{
             data-bs-target="#offcanvasScrolling"
             aria-controls="offcanvasScrolling"
           >
-            <i className="bi bi-list fs-1" />
+            <i className="bi bi-list fs-lg-1 icone" />
           </button>
           <ul className="list-unstyled  d-lg-flex d-none ">
             <li className="nav-item">
