@@ -27,7 +27,7 @@ const Secondslider = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
         const settings = {
-        dots: true,
+    
         infinite: true,
         speed: 500,
         slidesToShow: slidesToShow, // Use the state variable here

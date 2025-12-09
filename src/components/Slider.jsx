@@ -27,7 +27,7 @@ const MySlider = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
         const settings = {
-        dots: true,
+       
         infinite: true,
         speed: 500,
         slidesToShow: slidesToShow, // Use the state variable here
@@ -58,6 +58,7 @@ const MySlider = () => {
               {" "}
               The SR Haven <br/> Manali (Himacahal Pradesh){""}
             </p>
+           
           </div>
         </div>
       </div>

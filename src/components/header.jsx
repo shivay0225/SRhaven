@@ -7,7 +7,7 @@ const Header  = () =>{
         <>
         
         <div className="div cn1">
-  <nav className="navbar nav-color fixed-top">
+  <nav className="navbar nav-color  ">
     <div className=" container-fluid   d-flex justify-content-between w-100 align-items-center ">
       <div className="d-flex align-items-center justify-content-center">
         <div className="d-flex align-items-center ">
@@ -18,11 +18,11 @@ const Header  = () =>{
             data-bs-target="#offcanvasScrolling"
             aria-controls="offcanvasScrolling"
           >
-            <i className="bi bi-list fs-lg-1 icone" />
+            <i className="bi bi-list fs-1 fs-lg-1 icone" />
           </button>
-          <ul className="list-unstyled  d-lg-flex d-none ">
+          <ul className="list-unstyled  align-items-center mb-0 d-lg-flex d-none ">
             <li className="nav-item">
-              <a className="nav-link " href="#">
+              <a className=" nav-link " href="#">
                 Home
               </a>
             </li>
@@ -32,12 +32,12 @@ const Header  = () =>{
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="#">
+              <a className="nav-link" href="#">
                 Pricing
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="#" tabIndex={-1}>
+              <a className="nav-link" href="#" tabIndex={-1}>
                 Disabled
               </a>
             </li>
@@ -94,7 +94,7 @@ const Header  = () =>{
       </div>
     </div>
   </nav>
-  <div className=" container cn2  d-flex justify-content-between align-items-center">
+  <div className=" container cn2  d-flex justify-content-between  align-items-center">
     <div className="booking-bar d-lg-flex  py-2  py-4 d-block  justify-content-between align-items-center">
       <div className="booking-item my-lg-0 my-3 ">
         <div className="list-box-1 d-flex px-3 py-lg-0 py-2 px-3 align-items-center">

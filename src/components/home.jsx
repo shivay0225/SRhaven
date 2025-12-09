@@ -2,12 +2,18 @@ import Slider from "react-slick"
 import MySlider from "./Slider"
 import Secondslider from "./slider2"
 import Thirdslider from "./slider3"
+
+import Footer from "./footer"
+
+
+
 const Home = () => {
 
 
   return (
 
-    <>
+     <>
+   
 
       <div className="container-fluid cn3">
         <div className="container">
@@ -384,7 +390,7 @@ const Home = () => {
           >
             <div className="lux-heading">
               <div className="mt-5 ">
-                <h1 className=" our mb-0"> Weding & Celebrations </h1>
+                <p className=" our  mb-0 c"> Weding & Celebrations </p>
                 <span className="lux-line  ">
                   {" "}
                   <img
@@ -557,17 +563,15 @@ const Home = () => {
 
 
         </div>
-
-      </div>
-
-
+     
+      <Footer/>
 
 
+   </div>
 
+  </>
 
-
-
-    </>
+  
   )
 
 }
