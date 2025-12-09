@@ -13,14 +13,14 @@
     /* background-color: transparent; */
       
     font-weight: 500;
-    transition: 1s ease;
+       transition: 1s ease;
 
 }
 
-.nav-color:hover {
+ .nav-color:hover {
 
     background-color: #f7f4e5;
-    transition: 0.4s ease;
+    transition: 1s ease;
 }
 
 .nav-color:hover::after {
@@ -81,6 +81,7 @@ align-items: center !important;
     left: 280%;
 
 }
+
 
 
 .cn1 {
@@ -596,10 +597,23 @@ font-family: "Playfair Display", sans-serif;;
         height: auto;
         /* margin-left: 60px; */  
     }
-    .nav-color{
+   
 
-        width: auto%;
-    }
+.nav-color {
+
+    /* background-color: transparent; */
+      
+    font-weight: 500;
+       transition: 1s ease;
+
+}
+
+
+.cn1:hover .nav-color {
+
+    background-color: #f7f4e5;
+    transition: 1.4s ease;
+}
 
     .icone{
 
