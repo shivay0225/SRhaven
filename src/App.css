@@ -11,19 +11,17 @@
 .nav-color {
 
     /* background-color: transparent; */
-        background-color: #f7f4e5;
+      
     font-weight: 500;
+    transition: 1s ease;
 
-}
-/* .nav-scroll {
-  background-color: #f7f4e5 !important;
 }
 
 .nav-color:hover {
 
     background-color: #f7f4e5;
     transition: 0.4s ease;
-} */
+}
 
 .nav-color:hover::after {
 
