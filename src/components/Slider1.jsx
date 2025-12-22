@@ -1,58 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules';
 
-
-const MySlider = () => {
-
-  
-        const settings = {
-       
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3.2,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll:1,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-    };
-
-  
-  return ( 
+export default function MySlider1() {
+  return (
     <>
-   <div className="slider">
-    <Slider   {...settings}>
-      
-        <div className="px-4">
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+         navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+          },
+        }}
+        modules={[Navigation ,Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>  <div className="">
         <div
-          className="card  bg-transparent h-[700px] "
+          className="card  bg-transparent "
         >
           <div className="card-img">
             <img
@@ -69,10 +56,10 @@ const MySlider = () => {
            
           </div>
         </div>
-      </div>
-      <div className=" px-2">
+      </div></SwiperSlide>
+        <SwiperSlide>     <div className="">
         <div
-          className="card bg-transparent h-[700px]"
+          className="card bg-transparent"
         >
           <div className="card-img">
             <img
@@ -88,10 +75,10 @@ const MySlider = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="px-2">
+      </div></SwiperSlide>
+        <SwiperSlide>   <div className="">
         <div
-          className="card bg-transparent h-[700px]"
+          className="card bg-transparent "
         >
           <div className="card-img">
             <img
@@ -107,10 +94,10 @@ const MySlider = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="px-2">
+      </div></SwiperSlide>
+        <SwiperSlide>     <div className="">
         <div
-          className="card bg-transparent h-[700px]"
+          className="card bg-transparent"
         >
           <div className="card-img">
             <img
@@ -126,8 +113,8 @@ const MySlider = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="px-2">
+      </div></SwiperSlide>
+        <SwiperSlide>     <div className="">
         <div
           className="card bg-transparent"
         >
@@ -145,10 +132,10 @@ const MySlider = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="px-2">
+      </div></SwiperSlide>
+        <SwiperSlide>  <div className="">
         <div
-          className="card bg-transparent h-[700px] "
+          className="card bg-transparent "
         >
           <div className="card-img">
             <img
@@ -164,18 +151,9 @@ const MySlider = () => {
             </p>
           </div>
         </div>
-      </div>
-    </Slider>
-</div>
-  
-   
+      </div></SwiperSlide>
+      
+      </Swiper>
     </>
-  )
-    
-
+  );
 }
-
-
-
-export default MySlider
-

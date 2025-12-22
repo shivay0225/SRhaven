@@ -1,20 +1,20 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
 
 /* :start */
 
-.menu-bar {
-
-    height: 600px;
-    width: 20%;
-    margin-top: 5px
+.cn1 {
+    position: relative;
+  background-image: url("/images/hotels/hotelimage6.jpg");
+    /* background-image: url("/images/hotels/hotel3.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    background-position: center;
 }
-
 .nav-color {
-
-    /* background-color: transparent; */
-      
-    font-weight: 500;
+     font-weight: 500;
        transition: 1s ease;
-
 }
 
  .nav-color:hover {
@@ -28,22 +28,6 @@
    color: white;
 }
 
-a {
-
-    text-decoration: none !important;
-    color: inherit !important;
-}
-/* 
-.left-item{
-
-
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-} */
-
-
-
 .logoimg {
     height: 70px;
     width: 90px;
@@ -56,14 +40,6 @@ a {
     transform: scale(1.05);
 }
 
-
-.list{
-
-display: flex !important;
-justify-content: center !important;
-align-items: center !important;
-
-}
 .bt-book {
 
     background-color: #ad2132;
@@ -74,40 +50,11 @@ align-items: center !important;
 
 }
 
-
-.d1 {
-
-    position: absolute;
-    left: 280%;
-
-}
-
-
-
-.cn1 {
-
-    position: relative;
-  background-image: url("/images/hotels/hotelimage6.jpg");
-    /* background-image: url("/images/hotels/hotel3.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    background-position: center;
-
-    height: 100vh;
-
-
-}
-
 .cn2 {
-
     position: absolute;
-   margin-left: 10px;
+ width: 85%;
     bottom: 4%;
-
-
 }
-
 
 .booking-bar {
     background: rgba(169, 165, 152, 0.208);
@@ -115,8 +62,6 @@ align-items: center !important;
     border: 1px solid rgba(255, 255, 255, 0.3);
     width: 100%;
     padding: 15px;
-
-
 }
 
 .booking-item {
@@ -125,19 +70,14 @@ align-items: center !important;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 6px;
        padding-right :10px;
-
 }
 
 .logoimg2 {
-
-
     height: 28px;
     width: 29px;
-
 }
 
 .booking-list {
-    
     padding: 10px 5px;
     border: none;
     background: transparent;
@@ -147,7 +87,6 @@ align-items: center !important;
     outline: none;
     font-weight: 600;
      padding-right :90px;
-
 }
 
 .booking-list-2 {
@@ -160,7 +99,6 @@ align-items: center !important;
     outline: none;
     font-weight: 600;
      padding-right :90px;
-    
 }
 
 .booking-list-3 {
@@ -187,82 +125,56 @@ align-items: center !important;
      padding-right :60px;
 }
 
-
 .book-btn {
     padding: 10px 46px;
     border-radius: 6px;
     border: 0;
     background-color: #817064c6;
     color: #e9e2e2;
-
 }
 
 .butn { 
-
- margin-left: 90px;
+    margin-left: 90px;
     background-color: #ad2132;
-
     color: white;
     border: 0;
     padding: 10px 50px 10px 50px;
-
 }
-
-
-.list-box-1 {
-   display: flex;
-   
-}
-
 
 .cn3{
-/* background: radial-gradient(circle, #FFFFFF 0%, #F9F5EF 100%); */
-
-/* background-color: #EDEFF1; */
-/* background-color: #F7F9F4; */
-/* background-color: #F7F4EF; */
 background-color: #f5f3f0;
-/* background-color: #EEF2F4   ; */
-
-
 }
-
 
 .lux-heading {
     text-align: center;
     padding: 40px 0;
     font-family: "Times New Roman", serif;
 }
-
 .lux-heading h1 {
     font-size: 36px;
     font-weight: 400;
-    color: #3e4550;
-    margin-bottom: 20px;
+    color: #282d35;
+    
 }
-
-.lux-divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;  
-}
-
-.hrimg{
-   
-    width: 60%;
-    height: 50px;
-}
-
 .lux-heading2{
 
   font-size: 1.9rem;
   font-family: sans-serif;
   font-weight: 100;
-  color: #00000089 ;
+  color: #262222da ;
 
 }
+.card-body{
 
+border-left: 1px solid #B9A47B;
+  border-right: 1px solid #B9A47B;
+  border-bottom: 1px solid #B9A47B;
+
+    font-family: serif; /* Use an elegant font */
+    color: #4C4B4A;
+
+   
+}
 .Manaliimg{
 
  width: 100%;
@@ -271,57 +183,15 @@ background-color: #f5f3f0;
 
 }
 
-.card{
-
-    height: 480px !important;
+.slick-prev:before, .slick-next:before{
+      font-size: 40px !important;
+      
+    background-color:   #f7f4e5!important;
     
 }
-
-
-.card-img{
-       width: 100%;
-  height: 380px;
-  overflow: hidden;
+.slick-prev{
+    left: -50px !important;
 }
-.card-body .p1{
-
-    font-size: 1.3rem;
-
-}
-
-.card-img{
-
-border-radius: 0 !important;
-
-   
-}
-
-
-.card-body{
-
-border-left: 1px solid #B9A47B;
-  border-right: 1px solid #B9A47B;
-  border-bottom: 1px solid #B9A47B;
-  margin: 0;
-    font-family: serif; /* Use an elegant font */
-    color: #4C4B4A;
-
-   
-}
-
-
-
-/* .cn4{
-
-    margin-top: 120px;
-  height: 700px;
-background-image: url("/images/hotels/offer3.jpeg");
-background-size: cover;
-background-repeat: no-repeat;       
-object-fit: cover;
-background-position: center;
-    
-} */
 
 .cn4 {
     margin-top: 120px;
@@ -336,30 +206,6 @@ background-position: center;
 
 /* Dark overlay */
 .cn4::before {
- content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.35);  /* increase this to 0.40–0.45 to make more dull */
-    z-index: 1; /* overlay above image */
-}
-
-
-.cn5 {
-    margin-top: 120px;
-    height: 800px;
-    background-image: url("/images/hotels/c1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative; /* IMPORTANT */
-    overflow: hidden;
-}
-
-/* Dark overlay */
-.cn5::before {
  content: "";
     position: absolute;
     top: 0;
@@ -394,6 +240,47 @@ background-position: center;
     
 }
 
+.btn-explore{
+
+
+margin-top: 490px;
+  
+    padding: 6px 43px 8px 43px ;
+    color: rgb(173, 33, 50);
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color:#d5d6d7;
+      border: 0;
+    z-index: 2; /* text ABOVE overlay */
+
+}
+
+
+
+.cn5 {
+    margin-top: 120px;
+    height: 800px;
+    background-image: url("/images/hotels/c1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* IMPORTANT */
+    overflow: hidden;
+}
+
+/* Dark overlay */
+.cn5::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);  /* increase this to 0.40–0.45 to make more dull */
+    z-index: 1; /* overlay above image */
+}
+
+
 
 .offers1{
 
@@ -416,7 +303,7 @@ background-position: center;
 .offers1 .p2{
       
     font-size: 1.2rem;
-    margin-left: 174px;
+
 
     
 }
@@ -470,24 +357,10 @@ background-position: center;
 .offers2 .p2{
       
     font-size: 1.3rem;
-    margin-left: 172px;
+
     
 }
 
-.btn-explore{
-
-
-margin-top: 490px;
-  
-    padding: 6px 43px 8px 43px ;
-    color: rgb(173, 33, 50);
-    font-size: 1.4rem;
-    font-weight: 400;
-    background-color:#d5d6d7;
-      border: 0;
-    z-index: 2; /* text ABOVE overlay */
-
-}
 .btn-explore1{
 
 
@@ -502,9 +375,6 @@ margin-top: 490px;
     z-index: 2; /* text ABOVE overlay */
 
 }
-
-
-
 
 .con1{
 
@@ -566,7 +436,7 @@ margin-top: 490px;
    
    background-color:  #ffffffec;
    width: 1px;
-   height: 35px;
+   height: 36px;
    
 }
 
@@ -576,71 +446,71 @@ margin-top: 490px;
 }
 .ft-sub{
 
-font-family: "Playfair Display", sans-serif;;
+font-family: "Playfair Display", sans-serif;
+ font-size: 1.5rem;
 }
 
+.footer-links h1 {
 
-
-
-
-
-
-
-
-
-
-     /* responisve */
-
-@media only screen and (max-width:768px) {
-    .logoimg {
-        width: 60px;
-        height: auto;
-        /* margin-left: 60px; */  
-    }
-   
-
-.nav-color {
-
-    /* background-color: transparent; */
-      
+    font-size: 1.5rem;
     font-weight: 500;
-       transition: 1s ease;
+
 
 }
 
+.signup{
 
+font-family: "Playfair Display", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2; 
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff !important;     /* pure white arrow */
+  background: transparent;      /* no background */
+  width: auto;
+  height: auto;
+  z-index: 50;
+}
+
+/* Arrow size */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px;    /* arrow size */
+  font-weight: 300;  /* thin arrow */
+}
+
+/* Slight shadow so image pe bhi dikhe */
+.swiper-button-prev,
+.swiper-button-next {
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.swiper-pagination{
+
+    display: none !important;
+}
+@media only screen and (max-width:768px){
+
+  .nav-color {
+      
+       font-weight: 500;
+       transition: 1s ease;
+}
 .cn1:hover .nav-color {
 
     background-color: #f7f4e5;
     transition: 1.4s ease;
 }
-
-    .icone{
-
-        font-size: 2.3rem;
+   .logoimg {
+        width: 60px;
+        height: auto;
+        /* margin-left: 60px; */  
     }
 
-    .cn1 {
-
-       /* background-image: url("/images/hotels/hotel3.jpg"); */
-       /* background-image: url("/images/hotels/hotel4img.jpg"); */
-          background-image: url("/images/hotels/hotelimage6.jpg");
-          background-position: center;
-          background-size: cover;
-          height: 90vh;
-    }
-
-      .butn { 
-
- margin-left: 60px;
-    background-color: #ad2132;
-
-    color: white;
-    border: 0;
-    padding: 10px 50px 10px 50px;
-
-}
-    .bt-book {
+ .bt-book {
 
         padding: 5px 10px;
         height: auto;
@@ -649,145 +519,90 @@ font-family: "Playfair Display", sans-serif;;
     .icon-bar{
 
         width: 31px;
-        height: 31px;
+        height: 32px;
     }
     .right-item{
     
       width: auto;
       height: auto;
     }
-    .signup {
-        display: none;
-        width: 10px;
-        height: auto;
-        font-size: 0.9rem;
-
-    }
-
-     /* booking bar */
     .cn2 {
-
         position: absolute;
         height: auto;
         width:  100%;
-   position: center;
+        position: center;
         top: 99%;
-
-     
     }
 
     .booking-bar {
         background: rgba(0, 0, 0, 0.405);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.3);
-     
-    
         display: block;
         width: 90% ;
         height: auto;
         border-radius: 15px;
      
     }
-
-
     .booking-list {
-
-        /* padding: 7px 40px; */
           padding-right: 50px;  
-
     }
 
     .booking-list-2 {
-
-        /* padding: 7px 40px; 
-        margin-top: 2px; */
           padding-right: 10px;  
     }
 
     .booking-list-3 {
-        /* padding: 7px 40px; */
           padding-right: 26px;  
-       
     }
     
 
-    .card{
-
-        height: 470px !important;
-    }
- 
-   .Manaliimg{
-
- width: 100%;
-  height: 380px;
-  object-fit: cover;
-
+    
+.footer-newsletter form {
+    display: flex;
 }
 
-
-.ourhotels{
-
-    margin-top: 120px;
-
-}
-
-.hrimg{
+.footer-newsletter input[type="email"] {
+    padding: 7px;
+  border: 2px solid #ababab ;
+    background-color: transparent;
+    color: #FFFFFF !important ;
+    border-right: none;
+    border-top: none;
+    border-left: none;
    
-    width: 100%;
-    height: 35px;
-    margin-top: 0;
-    margin-bottom: 0;
-  
-    
-
+}
+.footer-newsletter button {
+    padding: 10px 10px;
+    background-color: #F7D786 ;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2C2C2C;
+    white-space: nowrap;
+    width: auto;
+    height: auto    ;
 }
 
-.lux-heading2{
-
-  font-size: 1.5rem;
-  font-family: sans-serif;
-  font-weight: 100;
-  color: #00000089 ;
-  
-  
+.ft-list li{
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
-
-
-
-.slider{
-
-   width: auto;
-   height: auto;
-
-}
-
-.card{
-
-    /* width:  900px !important;
-    height: 400px    !important; */
-}
-
 
 .offers{
-
-
     margin-top: 30px;
 }
 
 .offers p{
-
-    font-size: 2.8rem;
+ font-size: 2.8rem;
 }
 
 .offers  .p2{
-
 font-size: 1.2rem;
 width: 100%;
-
 }
 
 .offers1{
-
   position: relative;
     z-index: 2; /* text ABOVE overlay */
     margin-top: 30px;
@@ -795,7 +610,6 @@ width: 100%;
 
 
 .offers1 p {
-
    position: relative;
     z-index: 2; /* text ABOVE overlay */
     font-size: 1.4rem;
@@ -808,13 +622,10 @@ width: 100%;
       margin-top: 6px;
     font-size: 0.6rem;
     margin-left: 10px;
-
-    
 }
 
 
 .offers2{
-
   position: relative;
     z-index: 2; /* text ABOVE overlay */
     margin-top: 30px;
@@ -822,7 +633,6 @@ width: 100%;
 
 
 .offers2 p {
-
    position: relative;
     z-index: 2; /* text ABOVE overlay */
     font-size: 1.4rem;
@@ -835,85 +645,11 @@ width: 100%;
       margin-top: 10px;
     font-size: 0.6rem;
     margin-left: 10px;
-
-    
-}
-
-.our{
-
-    font-size: 1.6rem;
-}
-
-
-.card {
-  width: 100% !important;
-    max-width: 360px;
-  height: auto ;
-    overflow: hidden;
-  
-}
-
-/* Image responsive */
-.Manaliimg {
-  width: 100%;
-  height: 400px;
- 
-}
-
-.col {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.slider .col {
-  width: auto !important;
-  max-width: none !important;
-  padding: 0 !important;
 }
 
 
 
-
-
-.footer-newsletter form {
-    display: flex;
-    
-
 }
-
-.footer-newsletter input[type="email"] {
-    padding: 7px;
-  border: 2px solid #ababab ;
-    background-color: transparent;
-    color: #FFFFFF !important ;
-
-    border-right: none;
-    border-top: none;
-    border-left: none;
-   
-}
-.footer-newsletter button {
-    padding: 10px 10px;
-   
-    background-color: #F7D786 ;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    color: #2C2C2C;
-    white-space: nowrap;
-    width: auto;
-    height: auto    ;
-}
-
-.ft-list li{
-
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
-}
-
-
 
 
 

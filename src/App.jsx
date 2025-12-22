@@ -1,9 +1,9 @@
 
 import './App.css'
-
-
-import Header from "./components/header"
-import Home from "./components/home"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/home"
+import Signup from "./auth/signup"
+import Signin from './auth/login'
 
 function App() {
 
@@ -11,34 +11,24 @@ function App() {
   return (
     <>
 
-     <Header/>
-      <Home/>
-
-     {/* <BrowserRouter>
+   
+          <BrowserRouter>
  
 
         <Routes>
           
           <Route path='/' element={<Home/>} />
-        
-          <Route path='/site' element={<Site />} />
-          <Route path='/webapp' element={<WebApp />} />
-          <Route path='/browse' element={<Browse />} />
-          <Route path='/discover' element={<Discover />} />
-          <Route path='/charts' element={<Charts />} />
-          <Route path='/artist' element={<Artist />} />
-          <Route path='/signup' element={<SignUp />} />
-          <Route path='/verifyotp' element={<Verifyotp />} />
-          <Route path='/signin' element={<SignIn />} />
-           <Route path='/rtl' element={<RTL/>} />
-
+      
+          <Route path='signup' element={<Signup/>} />
+           <Route path='login' element={<Signin/>} />
 
 
 
 
         </Routes>
     
-      </BrowserRouter> */}
+      </BrowserRouter>
+
     </>
   )
 }
