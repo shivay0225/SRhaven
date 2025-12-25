@@ -108,7 +108,7 @@ const toggleDropdown = () => {
                         {/* HEADER */}
                         <div className= " lg: pt-2.5 w-full  flex justify-end">
 
-                        <div className= {`pt-7 lg:pb-0 pb-2 lg:ps-o ps-10 lg:pe-0 pe-4 w-[100%] bg-[#f7f4e5]  
+                        <div className= {`lg:pt-7 pt-3  lg:pb-0 pb-8 lg:ps-o ps-10 lg:pe-0 pe-4 w-[100%] bg-[#f7f4e5]  
                           ${destinationOpen
       ? "max-h-[600px] duration-1800   ease-[cubic-bezier(1,15,0,0,29)]-out"
       : "max-h-0  duration-800  ease-[cubic-bezier(1,15,0,0,29)]-in "}

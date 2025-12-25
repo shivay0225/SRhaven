@@ -17,7 +17,7 @@ const SideBarMenu = ({menuOpen, setMenuOpen, setDestinationOpen, destinationOpen
                     </button>
 
                     {/* MENU CONTENT */}
-                    <div className="px-8 lg:py-9 py-10 space-y-2 text-[18px] font-serif lg:h-[700px] h-[800px]  overflow-hidden overflow-y-scroll">
+                    <div className="px-8 lg:py-9 py-10 space-y-2 text-[18px] font-serif lg:h-[700px] h-[700px]  overflow-hidden overflow-y-scroll">
                       <div className="border-b lg:pb-5 pb-4 ">Home</div>
                       <div className="border-b lg:pt-2 pt-2  pb-4">
                         <button
