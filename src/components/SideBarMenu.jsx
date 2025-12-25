@@ -19,7 +19,7 @@ const SideBarMenu = ({menuOpen, setMenuOpen, setDestinationOpen, destinationOpen
                     {/* MENU CONTENT */}
                     <div className="px-8 lg:py-9 py-10 space-y-2 text-[18px] font-serif lg:h-[700px] h-[800px]  overflow-hidden overflow-y-scroll">
                       <div className="border-b lg:pb-5 pb-4 ">Home</div>
-                      <div className="border-b lg:pt-2 pt-5  pb-4">
+                      <div className="border-b lg:pt-2 pt-2  pb-4">
                         <button
                           onClick={() => setDestinationOpen(!destinationOpen)}
                           className="flex items-center lg:gap-x-42 gap-x-32  text-gray-900  cursor-pointer "
@@ -81,21 +81,21 @@ const SideBarMenu = ({menuOpen, setMenuOpen, setDestinationOpen, destinationOpen
 
 
       </div>
-                      <div className="border-b lg:pt-2 pt-4 pb-4 "> Offers</div>
-                      <div className="border-b lg:pt-2 pt-4 pb-4 ">Dinning</div>
-                      <div className="border-b lg:pt-2 pt-4 pb-4  flex justify-between">
+                      <div className="border-b lg:pt-2 pt-2 pb-4 "> Offers</div>
+                      <div className="border-b lg:pt-2 pt-2 pb-4 ">Dinning</div>
+                      <div className="border-b lg:pt-2 pt-2 pb-4  flex justify-between">
                         <span>Meeting & Confernece </span>
                       </div>
-                      <div className="border-b lg:pt-2 pt-4 pb-4  flex justify-between">
+                      <div className="border-b lg:pt-2 pt-2 pb-4  flex justify-between">
                         <span> Wedding & Celebrations </span>
                       </div>
-                      <div className="border-b lg:pt-2 pt-4 pb-4  flex justify-between">
+                      <div className="border-b lg:pt-2 pt-2 pb-4  flex justify-between">
                         <span> SR Heaven Experiences  </span>
                       </div>
-                      <div className="border-b lg:pt-2 pt-4 pb-4  flex justify-between">
+                      <div className="border-b lg:pt-2 pt-2 pb-4  flex justify-between">
                         <span> About us   </span>
                       </div>
-                      <div className="border-b lg:pt-2 pt-4 pb-4 ">Contact Us</div>
+                      <div className="border-b lg:pt-2 pt-2 pb-4 ">Contact Us</div>
 
                       <button className="mt-7 w-full bg-[#a67349] text-white py-3  tracking-widest">
                         BOOK
