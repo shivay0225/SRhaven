@@ -108,7 +108,7 @@ const toggleDropdown = () => {
                         {/* HEADER */}
                         <div className= " lg: pt-2.5 w-full  flex justify-end">
 
-                        <div className= {`lg:pt-7 pt-3  lg:pb-0 pb-8 lg:ps-o ps-10 lg:pe-0 pe-4 w-[100%] bg-[#f7f4e5]  
+                        <div className= {`lg:pt-7 pt-5  lg:pb-0 pb-11 lg:ps-o ps-10 lg:pe-0 pe-4 w-[100%] bg-[#f7f4e5]  
                           ${destinationOpen
       ? "max-h-[600px] duration-1800   ease-[cubic-bezier(1,15,0,0,29)]-out"
       : "max-h-0  duration-800  ease-[cubic-bezier(1,15,0,0,29)]-in "}
@@ -123,8 +123,8 @@ const toggleDropdown = () => {
                         </div>  
 
                         {/* DESTINATIONS */}
-                        <div className=" lg:flex none lg:px-7  lg:pt-4 pt-4  lg:space-y-6 space-y-6 gap-30 ">
-                          <ul className=" lg:py-3 lg:space-y-12 space-y-6  text-[18px]">
+                        <div className=" lg:flex none lg:px-7  lg:pt-4 pt-4  lg:space-y-6 space-y-7 gap-30 ">
+                          <ul className=" lg:py-3 lg:space-y-12 space-y-7  text-[18px]">
                             <li className="lg:border-b  border-b-black">
                               Manali (Himachal Pradesh)
                             </li>
@@ -135,7 +135,7 @@ const toggleDropdown = () => {
                               Dharamshala (Himachal Pradesh)
                             </li>
                           </ul>
-                          <ul className=" lg:py-3 lg:space-y-12 space-y-6  text-[18px]">
+                          <ul className=" lg:py-3 lg:space-y-12 space-y-7  text-[18px]">
                             <li className="lg:border-b  border-b-black">
                               Dhalousie (Himachal Pradesh)
                             </li>

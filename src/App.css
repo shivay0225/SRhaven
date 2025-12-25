@@ -479,6 +479,19 @@ font-family: "Playfair Display", sans-serif;
 
     display: none !important;
 }
+
+.card-img {
+  overflow: hidden;          /* hides image edges while zooming */
+}
+
+.card-img img {
+  transition: transform 0.8s ease;   /* smooth animation */
+  transform: scale(1); 
+}
+
+.card-img:hover img {
+  transform: scale(1.1);     /* zoom in */
+}
 @media only screen and (max-width:768px){
 
   .nav-color {
@@ -635,7 +648,9 @@ width: 100%;
     margin-left: 10px;
 }
 
-
+ .card-img:hover img {
+    transform: scale(1);   /* zoom cancel */
+  }
 
 }
 
