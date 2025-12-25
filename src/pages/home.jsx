@@ -8,12 +8,30 @@ import Header from "../components/header"
 import MySlider1 from "../components/Slider1"
 import MySlider2 from "../components/slider4"
 import MySlider3 from "../components/slider5"
+import { useState } from "react";
 
 
 
 const Home = () => {
 
+  const [destinationOpen, setDestinationOpen] = useState(false);
+const [showBorder, setShowBorder] = useState(false);
 
+const toggleDropdown = () => {
+  if (!destinationOpen) {
+    // Opening
+    setShowBorder(true);
+    setDestinationOpen(true);
+  } else {
+    // Closing
+    setDestinationOpen(false);
+
+    // Remove border AFTER animation time
+    setTimeout(() => {
+      setShowBorder(false);
+    }, 600); // same as duration-500
+  }
+};
   return (
 
      <>
@@ -40,24 +58,112 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <p className="lux-heading2  "> Destinations</p>
-           
+            <div className="flex">
+            <p className="lux-heading2  flex justify-between  border-b border-b-black w-full"> <span>Destinations </span>
+           {/* <button className="" onClick={() => setDestinationOpen(!destinationOpen)}>  */}
+               <button className="" onClick= {toggleDropdown}> 
+              
+            <svg
+                      viewBox="0 0 20 20"
+                      fill=""
+                      data-slot="icon"
+                      aria-hidden="true"
+                      className="size-8 me-1"
+                    >
+                        <path
+                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                          clipRule="evenodd"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                      </button>
+          </p>
+<div
+  // onTransitionEnd={() => {
+  //   if (!destinationOpen) {
+  //     setShowBorder(false);   // fully closed hone ke baad hi hatana
+  //   }
+  // }}
+
+  className={`
+    absolute right-0 lg:me-18 me-[11.6px] z-50
+    lg:mt-16 mt-10 
+    text-black font-serif
+ 
+    overflow-hidden
 
 
+  ${destinationOpen
+      ? "max-h-[600px] duration-1800   ease-[cubic-bezier(1,15,0,0,29)]-out"
+      : "max-h-0  duration-800  ease-[cubic-bezier(1,15,0,0,29)]-in "}
+       transition-[max-height]
+
+       
+
+    
+  `}
+>
+   
+
+                        {/* HEADER */}
+                        <div className= " lg: pt-2.5 w-full  flex justify-end">
+
+                        <div className= {` lg:pb-0 pb-7 lg:px-0 px-8 w-[100%] bg-[#f7f4e5]  
+                          ${destinationOpen
+      ? "max-h-[600px] duration-1800   ease-[cubic-bezier(1,15,0,0,29)]-out"
+      : "max-h-0  duration-800  ease-[cubic-bezier(1,15,0,0,29)]-in "}
+       transition-[max-height]
+   ${showBorder
+      ? "border border-black/20 shadow-xl "
+      : "border border-transparent shadow-none"} `}>
+                        <div className=" lg:px-6 lg:py-4 py-2 lg:pt-0   border-b border-black/50 ">
+                          <h3 className="text-lg  font-[500]  tracking-wide">
+                            The SR Heaven
+                          </h3>
+                        </div>  
+
+                        {/* DESTINATIONS */}
+                        <div className=" lg:flex none lg:px-7  lg:pt-6 pt-4  lg:space-y-6 space-y-6 gap-30 ">
+                          <ul className=" lg:py-3 lg:space-y-12 space-y-6  text-[18px]">
+                            <li className="lg:border-b  border-b-black">
+                              Manali (Himachal Pradesh)
+                            </li>
+                            <li className="lg:border-b  border-b-black">
+                              Masoori (Uttrakhand)
+                            </li>
+                            <li className="lg:border-b  border-b-black">
+                              Dharamshala (Himachal Pradesh)
+                            </li>
+                          </ul>
+                          <ul className=" lg:py-3 lg:space-y-12 space-y-6  text-[18px]">
+                            <li className="lg:border-b  border-b-black">
+                              Dhalousie (Himachal Pradesh)
+                            </li>
+                            <li className="lg:border-b  border-b-black">
+                              Nainital (Uttarakhand)
+                            </li>
+                            <li className="lg:border-b  border-b-black">
+                              Darjleeng (West Bengal)
+                            </li>
+                          </ul>
+                        </div>
+           </div>
+           </div>
+           </div>
+
+          </div>
           </div>
 
     
 
 
-          <div class="slider mt-8">
+          <div class="slider lg:mt-13 mt-10 ">
 
             <MySlider1/>
           </div>
 
           
         </div>
-
-
         <div className="px-3">
           <div className="row cn4">
 
@@ -78,8 +184,6 @@ const Home = () => {
 
         </div>
 
-
-
         <div className="container">
          <div className="  lg:px-18 px-3">
           <div
@@ -99,18 +203,36 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <p className="lux-heading2"> Destinations</p>
+               <div className="flex ">
+            <p className="lux-heading2  flex justify-between  border-b border-b-black w-full"> <span>Destinations </span>
+            <svg
+                      viewBox="0 0 20 20"
+                      fill=""
+                      data-slot="icon"
+                      aria-hidden="true"
+                      className="size-8 me-1"
+                    >
+                        <path
+                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                          clipRule="evenodd"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+          </p>
+             
+           </div>
+
             
 
           </div>
 
-          <div class="slider pt-8 ">
+        <div class="slider lg:mt-13 mt-10 ">
 
             <MySlider2/>
 
           </div>
         </div>
-</div>
+        </div>
 
         <div className="px-3">
           <div className="row cn5">
@@ -153,11 +275,29 @@ const Home = () => {
                 </span>
               </div> 
             </div>
-            <p className="lux-heading2"> Destinations</p>
+               <div className="flex ">
+            <p className="lux-heading2  flex justify-between  border-b border-b-black w-full"> <span>Destinations </span>
+            <svg
+                      viewBox="0 0 20 20"
+                      fill=""
+                      data-slot="icon"
+                      aria-hidden="true"
+                      className="size-8 me-1"
+                    >
+                        <path
+                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                          clipRule="evenodd"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+          </p>
+             
+           </div>
+
 
           </div>
 
-          <div class="slider pt-8">
+         <div class="slider lg:mt-13 mt-10 ">
 
             <MySlider3/>
 
