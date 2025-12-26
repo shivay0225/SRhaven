@@ -11,12 +11,12 @@ const Signup = () =>{
         <>
         <Header1/>
        
-      <div className="cn3  ">
-        <div className="flex  justify-center">
+      <div className="cn3">
+        <div className="flex py-12 justify-center">
 
-        <div className="w-full  max-w-2xl py-16 px-6 text-center">
+        <div className="w-full  max-w-2xl  lg:pt-26 pt-22 px-6 text-center">
   {/* Heading */}
-  <h1 className="font-[Playfair_Display] lg:text-[2.5rem] text-[2rem] font-normal tracking-[0.05em] text-[#6f6f6f] mb-12">
+  <h1 className="font-[Playfair_Display] lg:text-[2.5rem] text-[1.9rem] font-normal tracking-[0.05em] text-[#6f6f6f] mb-12">
     Sign up with SR Haven </h1>
   {/* Form */}
   <form className=" space-y-8">
@@ -119,14 +119,15 @@ const Signup = () =>{
 </div>
   </div>
   <div className="text-center ">
+    <div className="lg:px-155 px-2">
    <button
         type="submit"
-        class="lg:w-50 w-94  px-12 py-3 bg-[#ad2132] text-white text-lg tracking-wide hover:bg-[#ad2132] transition"
+        class="  w-full  px-12 py-3 bg-[#ad2132] text-white text-lg tracking-wide hover:bg-[#ad2132] transition"
       >
       Register
       </button>
-
-       <div class=" lg-pt-4 pt-6 lg:pb-2 pb-9 text-center text-gray-600 underline">
+</div>
+       <div class=" lg-pt-4 pt-6 lg:pb-6 pb-9 text-center text-gray-600 underline">
         
         <Link to={"/login"} href="#" class="hover:text-gray-800"> Already have an account</Link>
       </div>

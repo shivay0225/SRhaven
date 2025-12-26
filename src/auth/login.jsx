@@ -53,11 +53,11 @@ const Signin = () =>{
     {/* Button */}
 
   </form>
-    <div className="text-center lg:py-12 pt-10 pb-4   ">
+    <div className="text-center  lg:py-12 pt-10 pb-4 lg:px-55 px-2   ">
    <button
         type="submit"
-        class="lg:w-50 w-86  px-12 py-3 bg-[#ad2132] text-white text-lg tracking-wide hover:bg-[#ad2132] transition"
-      >
+        class="w-full  px-12 py-3 bg-[#ad2132] text-white text-lg tracking-wide hover:bg-[#ad2132] transition"
+      > 
    Login
       </button>
       </div>

@@ -39,14 +39,14 @@ const toggleDropdown = () => {
 
      <Header/>
       
-      <div className="@container cn3 ">
-        <div className="  lg:px-18 px-3">
+      <div className="container cn3 ">
+        <div className="lg:px-18 px-3">
 
           <div
             className="row px-1"
           >
-            <div className="lux-heading lg:mt-0 mt-36">
-              <div className="mt-5 ">
+            <div className="lux-heading lg:mt-0 ">
+              <div className="lg:mt-5  mt-36 ">
                 <h1 className="text-[40px] font-[400]  subpixel-antialiased mb-0"> Our Hotels</h1>
                 <span className="lux-line flex lg:justify-center">
                   {" "}
@@ -111,7 +111,7 @@ const toggleDropdown = () => {
                         <div className= {`lg:pt-7 pt-5  lg:pb-0 pb-11 lg:ps-o ps-10 lg:pe-0 pe-4 w-[100%] bg-[#f7f4e5]  
                           ${destinationOpen
       ? "max-h-[600px] duration-1800   ease-[cubic-bezier(1,15,0,0,29)]-out"
-      : "max-h-0  duration-800  ease-[cubic-bezier(1,15,0,0,29)]-in "}
+      : "max-h-0  duration-800  ease-[cubic-bezier(1,15,0,0,19)]-in "}
        transition-[max-height]
    ${showBorder
       ? "border border-black/20 shadow-xl "

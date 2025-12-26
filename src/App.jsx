@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/home"
 import Signup from "./auth/signup"
 import Signin from './auth/login'
+import Hotelmanali from './pages/hotels/hotelnainital'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       
           <Route path='signup' element={<Signup/>} />
            <Route path='login' element={<Signin/>} />
+            <Route path='hotelmanali' element={<Hotelmanali/>} />
 
 
 

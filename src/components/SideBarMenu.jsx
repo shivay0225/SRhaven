@@ -4,7 +4,7 @@ const SideBarMenu = ({menuOpen, setMenuOpen, setDestinationOpen, destinationOpen
     return(
         <>
             <div
-                    className={`fixed lg:top-25.5 top-15.5 left-0 z-50 h-screen sidebar lg:w-90 w-80 bg-[#f7f4e5] 
+                    className={`fixed lg:top-25.5 top-15.5 left-0 z-100 h-screen sidebar lg:w-90 w-80 bg-[#f7f4e5] 
                        transform transition-transform duration-700 ease-in-out
                       ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
                   >
@@ -25,7 +25,7 @@ const SideBarMenu = ({menuOpen, setMenuOpen, setDestinationOpen, destinationOpen
                           className="flex items-center lg:gap-x-42 gap-x-32  text-gray-900  cursor-pointer "
 
                         >
-                          Destination
+                          Hotels
                           <svg
                             viewBox="0 0 20 20"
                             fill=""

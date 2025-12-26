@@ -32,10 +32,10 @@ const Header = () => {
 
       <>
 
-        <div className="cn1 lg:h-[100vh] h-[90vh]">
+        <div className=" container cn1 lg:h-[100vh] h-[90vh]">
 
           <header
-         className={`nav-color fixed top-0 left-0 w-full z-50 
+         className={`container nav-color fixed top-0 left-0 w-full z-100 
          ${menuOpen || scrolled ? "bg-[#f7f4e5]" : "bg-transparent hover:bg-[#f7f4e5] transition-colors duration-1000 ease-in-out "}`}
          >
             <nav
@@ -81,7 +81,7 @@ const Header = () => {
                         className="flex items-center gap-x-1  font-semibold text-gray-900  cursor-pointer "
 
                       >
-                        Destination
+                       Hotels
                         <svg
                           viewBox="0 0 20 20"
                           fill="black"
