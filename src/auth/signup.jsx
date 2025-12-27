@@ -129,7 +129,7 @@ const Signup = () =>{
 </div>
        <div class=" lg-pt-4 pt-6 lg:pb-6 pb-9 text-center text-gray-600 underline">
         
-        <Link to={"/login"} href="#" class="hover:text-gray-800"> Already have an account</Link>
+        <Link to={"/login"} href="#" class="hover:text-gray-800" reloadDocument> Already have an account</Link>
       </div>
       </div>
       

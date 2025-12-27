@@ -1,5 +1,9 @@
-const SideBarMenu = ({menuOpen, setMenuOpen, setDestinationOpen, destinationOpen} ) => {
 
+
+import { Link } from "react-router-dom";
+
+const SideBarMenu = ({ open, setOpen, menuOpen, setMenuOpen, setDestinationOpen, destinationOpen} ) => {
+  
 
     return(
         <>
@@ -54,29 +58,53 @@ const SideBarMenu = ({menuOpen, setMenuOpen, setDestinationOpen, destinationOpen
         transition-[max-height]
   `}
 >
-      <ul className=" border-t mt-4 mb-2  pt-5  space-y-6 text-[17px]">
-        <li className="   pb-2 transition duration-300 ease-in-out">
-          Manali (Himachal Pradesh)
-        </li>
-        <li className="transition duration-500 ease-in-out pb-2">
-          Mussoorie (Uttarakhand)
-        </li>
-        <li className=" pb-2">
-          Dharamshala (Himachal Pradesh)
-        </li>
-      </ul>
+   
 
-      <ul className=" pt-4 space-y-6 text-[17px]">
-        <li className=" pb-2">
-          Dalhousie (Himachal Pradesh)
-        </li>
-        <li className="pb-2">
-          Nainital (Uttarakhand)
-        </li>
-        <li className=" pb-1">
-          Darjeeling (West Bengal)
-        </li>
-      </ul>
+<ul className="border-t mt-4 mb-2 pt-5 space-y-6 text-[17px]">
+
+  <Link to="/hotelmanali" className="block" reloadDocument>
+    <li className="pb-2 transition duration-300 ease-in-out">
+      Manali (Himachal Pradesh)
+    </li>
+  </Link>
+
+  <Link to="/hotelmasoori" className="block" reloadDocument>
+    <li className="pb-2 transition duration-500 ease-in-out">
+      Mussoorie (Uttarakhand)
+    </li>
+  </Link>
+
+  <Link to="/hoteldharamshala" className="block"reloadDocument>
+    <li className="pb-2">
+      Dharamshala (Himachal Pradesh)
+    </li>
+  </Link>
+
+</ul>
+
+
+<ul className="pt-4 space-y-6 text-[17px]">
+
+  <Link to="/hoteldhalousie" className="block" reloadDocument>
+    <li className="pb-2">
+      Dalhousie (Himachal Pradesh)
+    </li>
+  </Link>
+
+  <Link to="/hotelnainital" className="block" reloadDocument>
+    <li className="pb-2">
+      Nainital (Uttarakhand)
+    </li>
+  </Link>
+
+  <Link to="/hoteldarjeeling" className="block" reloadDocument>
+    <li className="pb-1">
+      Darjeeling (West Bengal)
+    </li>
+  </Link>
+
+</ul>
+
       </div>
 
 
@@ -97,7 +125,7 @@ const SideBarMenu = ({menuOpen, setMenuOpen, setDestinationOpen, destinationOpen
                       </div>
                       <div className="border-b lg:pt-2 pt-2 pb-4 ">Contact Us</div>
 
-                      <button className="mt-7 w-full bg-[#a67349] text-white py-3  tracking-widest">
+                      <button onClick={() => setOpen(true)}  className="mt-7 w-full bg-[#ad2132] text-white py-3  tracking-widest">
                         BOOK
                       </button>
                     </div>

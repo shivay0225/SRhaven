@@ -41,7 +41,7 @@ const Signin = () =>{
      <div class="text-left lg:ms-6 ms-4 text-gray-600 underline">
         <a href="#" class="hover:text-gray-800">Forgot password?</a>
         <span class="mx-2">|</span>
-        <Link to={"/signup"} href="#" class="hover:text-gray-800">Create an account</Link>
+        <Link to={"/signup"} href="#" class="hover:text-gray-800"reloadDocument>Create an account</Link>
       </div>
 
     {/* Links */}

@@ -43,7 +43,7 @@ export default function MySlider1() {
           className="card  bg-transparent "
         >
           <div className="card-img">
-           <Link to ="/hotelmanali" ><img
+           <Link to ="/hotelmanali" reloadDocument ><img
               src="/images/hotels/Manali.jpg"
               className="Manaliimg"
               alt="..." 
@@ -52,7 +52,7 @@ export default function MySlider1() {
           </div>
           <div className="card-body pb-5 ">
           
-              <Link to="/hotelmanali" > 
+              <Link to="/hotelmanali" reloadDocument> 
                <p className="p1 text-[1.3rem] ps-3 pt-3">
               {" "}
               The SR Haven <br/> Manali (Himacahal Pradesh){""}
@@ -67,7 +67,7 @@ export default function MySlider1() {
           className="card bg-transparent"
         >
           <div className="card-img">
-           <Link to={"/hotelmasoori"}> <img
+           <Link to={"/hotelmasoori"} reloadDocument> <img
               src="/images/hotels/masouri.jpg"
               className="Manaliimg"
               alt="..."
@@ -87,7 +87,7 @@ export default function MySlider1() {
         <SwiperSlide>  
           
            <div className="">
-            <Link to={"/hoteldharamshala"}>
+            <Link to={"/hoteldharamshala"} reloadDocument>
         <div
           className="card bg-transparent "
         >
@@ -130,7 +130,7 @@ export default function MySlider1() {
         </Link>
       </div></SwiperSlide>
         <SwiperSlide>     <div className="">
-           <Link to={"/hotelnainital"}>
+           <Link to={"/hotelnainital"}reloadDocument>
         <div
           className="card bg-transparent"
         >
@@ -151,7 +151,7 @@ export default function MySlider1() {
         </Link>
       </div></SwiperSlide>
         <SwiperSlide>  <div className="">
-            <Link to={"/hoteldarjleeng"}>
+            <Link to={"/hoteldarjleeng"}reloadDocument>
         <div
           className="card bg-transparent "
         >

@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 import SideBarMenu from "./SideBarMenu";
 
 
-const Header = () => {
+const Header = ({open,setOpen}) => {
 
 
-  const [open, setOpen] = useState(false);
+ 
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [destinationOpen, setDestinationOpen] = useState(false);
 
-
+ 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +62,7 @@ const Header = () => {
                       />
                     </svg>
                   </button>
-              <SideBarMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} setDestinationOpen={setDestinationOpen} destinationOpen={destinationOpen} />
+              <SideBarMenu open={open} setOpen={setOpen} menuOpen={menuOpen} setMenuOpen={setMenuOpen} setDestinationOpen={setDestinationOpen} destinationOpen={destinationOpen} />
                 {/* SideBarMenu */}
 
                   <el-popover-group className="  relative  hidden  lg:flex lg:gap-5">
@@ -176,9 +176,9 @@ const Header = () => {
                     >
                       <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
                     </svg>{" "}
-                    <Link to="/signup" class="lg:flex hidden"> Signup</Link>
+                    <Link to="/signup" class="lg:flex hidden"reloadDocument> Signup</Link>
                   </Link>
-                  <button onClick={() => setOpen(true)} className="bt-book "> Book </button>
+                  <button    onClick={() => setOpen(true)} className="bt-book "> Book </button>
                 </div>
               </div>
               </div>
@@ -187,7 +187,7 @@ const Header = () => {
           {/* / booking bar  */}
 
             <div
-              className={` flex  justify-center fixed top-0 w-full  left-0 shadow-lg z-50
+              className={` flex  justify-center fixed top-0 w-full  left-0 shadow-lg z-100
           transform transition-transform duration-500 ease-in-out
           ${open ? "translate-y-0" : "-translate-y-full"}
         `}

@@ -7,10 +7,16 @@ import Signin from './auth/login'
 import Hotelmanali from './pages/hotels/hotelmanali'
 import Herosec from './components/herosec'
 import Hotelmasoori from './pages/hotels/hotelmasoori'
-import HotelDharamshala from './pages/hotels/hoteldhramshalla'
+import HotelDharamshala from './pages/hotels/hoteldharamshala'
 import HotelDhalousie from './pages/hotels/hoteldhalousie'
 import HotelNainital from './pages/hotels/hotelnainital'
 import HotelDarjleeng from './pages/hotels/hoteldarjleeng'
+import Suites from './pages/hotelrooms/suites'
+import Poolroom from './pages/hotelrooms/poolroom'
+import Gardenroom from './pages/hotelrooms/gardenroom'
+import Familyroom from './pages/hotelrooms/familyroom'
+import Superdeluxeroom from './pages/hotelrooms/superdeluxeroom'
+import Deluxeroom from './pages/hotelrooms/deluxeroom'
 
 function App() {
 
@@ -35,6 +41,13 @@ function App() {
                  <Route path='/hoteldhalousie' element={<HotelDhalousie/>} />
                   <Route path='/hotelnainital' element={<HotelNainital/>} />
                    <Route path='/hoteldarjleeng' element={<HotelDarjleeng/>} />
+                     <Route path='/suites' element={<Suites/>} />
+                      <Route path='/poolroom' element={<Poolroom/>} />
+                       <Route path='/gardenroom' element={<Gardenroom/>} />
+                        <Route path='/familyroom' element={<Familyroom/>} />
+                         <Route path='/deluxeroom' element={<Deluxeroom/>} />'
+                          <Route path='/superdeluxeroom' element={<Superdeluxeroom/>} />
+                          
 
 
 

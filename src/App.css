@@ -703,6 +703,337 @@ font-family: "Playfair Display", sans-serif;
   );
   pointer-events: none;
 }
+
+
+.Room-hero-banner{
+  position: relative;
+  background-image: url("/images/rooms/suites1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.Room-hero-banner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+
+
+.roomcon {
+    margin-top: 10px;
+    height: 600px;
+   
+    background-image: url("/images/rooms/suites1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* IMPORTANT */
+    overflow: hidden;
+   
+  
+}
+
+/* Dark overlay */
+.roomcon::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.047);  /* increase this to 0.40–0.45 to make more dull */
+    z-index: 1; /* overlay above image */
+}
+
+.Room-hero-banner1{
+  position: relative;
+  background-image: url("/images/rooms/room2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.Room-hero-banner1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+
+.roomcon1 {
+    margin-top: 10px;
+    height: 600px;
+   
+    background-image: url("/images/rooms/room2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* IMPORTANT */
+    overflow: hidden;
+   
+  
+}
+
+/* Dark overlay */
+.roomcon1::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.047);  /* increase this to 0.40–0.45 to make more dull */
+    z-index: 1; /* overlay above image */
+}
+
+.Room-hero-banner2{
+  position: relative;
+  background-image: url("/images/rooms/room1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.Room-hero-banner2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+
+.roomcon2 {
+    margin-top: 10px;
+    height: 600px;
+   
+    background-image: url("/images/rooms/room1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* IMPORTANT */
+    overflow: hidden;
+   
+  
+}
+
+/* Dark overlay */
+.roomcon2::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.047);  /* increase this to 0.40–0.45 to make more dull */
+    z-index: 1; /* overlay above image */
+}
+
+
+.Room-hero-banner3{
+  position: relative;
+  background-image: url("/images/rooms/room3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.Room-hero-banner3::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+
+.roomcon3{
+    margin-top: 10px;
+    height: 600px;
+   
+    background-image: url("/images/rooms/room1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* IMPORTANT */
+    overflow: hidden;
+   
+  
+}
+
+/* Dark overlay */
+.roomcon3::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.047);  /* increase this to 0.40–0.45 to make more dull */
+    z-index: 1; /* overlay above image */
+}
+
+.Room-hero-banner4{
+  position: relative;
+  background-image: url("/images/rooms/deluxeroom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.Room-hero-banner4::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+
+.roomcon4 {
+    margin-top: 10px;
+    height: 600px;
+   
+    background-image: url("/images/rooms/deluxeroom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* IMPORTANT */
+    overflow: hidden;
+   
+  
+}
+
+/* Dark overlay */
+.roomcon4::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.047);  /* increase this to 0.40–0.45 to make more dull */
+    z-index: 1; /* overlay above image */
+}
+
+.Room-hero-banner5{
+  position: relative;
+  background-image: url("/images/rooms/deluxeroom1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.Room-hero-banner5::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+
+.roomcon5 {
+    margin-top: 10px;
+    height: 600px;
+   
+    background-image: url("/images/rooms/deluxeroom1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* IMPORTANT */
+    overflow: hidden;
+   
+  
+}
+
+/* Dark overlay */
+.roomcon5::before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.047);  /* increase this to 0.40–0.45 to make more dull */
+    z-index: 1; /* overlay above image */
+}
+
+.roombook{
+
+  margin-top: 490px;
+  
+    padding: 6px 43px 8px 43px ;
+    color: rgb(173, 33, 50);
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color:#d5d6d7;
+      border: 0;
+    z-index: 6; /* text ABOVE overlay */
+}
+
+
+
 @media only screen and (max-width:768px){
 
   .nav-color {

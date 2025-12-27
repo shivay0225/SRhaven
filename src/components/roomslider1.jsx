@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react';
+import { Link } from "react-router-dom";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -41,6 +43,7 @@ export default function RoomSlider1() {
         <div
           className="card  bg-transparent "
         >
+          <Link to={"/suites"} reloadDocument>
           <div className="card-img">
             <img
               src="/images/rooms/suites1.jpg"
@@ -55,12 +58,14 @@ export default function RoomSlider1() {
             </p>
            
           </div>
+          </Link>
         </div>
       </div></SwiperSlide>
         <SwiperSlide>     <div className="">
         <div
           className="card bg-transparent"
         >
+          <Link to={"/gardenroom"} reloadDocument>
           <div className="card-img">
             <img
               src="/images/rooms/room1.jpg"
@@ -74,12 +79,14 @@ export default function RoomSlider1() {
               PREMIER GARDEN VIEW ROOM <br /> <span> EXPLORE</span>
             </p>
           </div>
+          </Link>
         </div>
       </div></SwiperSlide>
         <SwiperSlide>   <div className="">
         <div
           className="card bg-transparent "
         >
+          <Link to={"/poolroom"} reloadDocument>
           <div className="card-img">
            <img
               src="/images/rooms/room2.jpg"
@@ -93,12 +100,14 @@ export default function RoomSlider1() {
               PREMIER POOL VIEW ROOM <br /> <span> EXPLORE</span>
             </p>
           </div>
+           </Link>
         </div>
       </div></SwiperSlide>
         <SwiperSlide>     <div className="">
         <div
           className="card bg-transparent"
         >
+          <Link to={"/deluxeroom"} reloadDocument>
           <div className="card-img">
            <img
               src="/images/rooms/deluxeroom1.jpg"
@@ -112,12 +121,14 @@ export default function RoomSlider1() {
              DELUXE GARDEN VIEW ROOM <br /> <span> EXPLORE</span>
             </p>
           </div>
+          </Link>
         </div>
       </div></SwiperSlide>
         <SwiperSlide>     <div className="">
         <div
           className="card bg-transparent"
         >
+          <Link to={"/superdeluxeroom"} reloadDocument>
           <div className="card-img">
               <img
               src="/images/rooms/deluxeroom.jpg"
@@ -131,12 +142,14 @@ export default function RoomSlider1() {
             SUPER DELUXE ROOM <br /> <span> EXPLORE</span>
             </p>
           </div>
+          </Link>
         </div>
       </div></SwiperSlide>
         <SwiperSlide>  <div className="">
         <div
           className="card bg-transparent "
         >
+          <Link to={"/familyroom"} reloadDocument>
           <div className="card-img">
                <img
               src="/images/rooms/room3.jpg"
@@ -150,6 +163,7 @@ export default function RoomSlider1() {
               FAMILY ROOM <br /> <span> EXPLORE</span>
             </p>
           </div>
+          </Link>
         </div>
       </div></SwiperSlide>
       
