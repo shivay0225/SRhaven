@@ -9,7 +9,7 @@ import RoomSlider1 from "../../components/roomslider1";
 
 
 
-const HotelNainital = () =>{
+const Hotelmasoori = () =>{
 
   const [openBox, setOpenBox] = useState(null);
   
@@ -39,7 +39,7 @@ const toggleDropdown = () => {
      */}
 
 
-     <div className="hero-banner5">
+     <div className="hero-banner2">
   
      <Header/>
        {/* bootom booking bar */}
@@ -398,4 +398,4 @@ const toggleDropdown = () => {
     )
   
 }
-export default HotelNainital
+export default Hotelmasoori

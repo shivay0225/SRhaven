@@ -11,13 +11,13 @@ const Signin = () =>{
         <>
         <Header1/>
        
-      <div className="cn3  ">
-        <div className="flex  justify-center py-10">
+      <div className=" container cn3  ">
+        <div className="flex  justify-center lg:py-24 py-20">
 
           <div className="w-full  max-w-2xl lg:py-16 pt-10 px-6 text-center">
   {/* Heading */}
-  <h1 className="font-[Playfair_Display] lg:text-[2.5rem] text-[2rem]  font-normal tracking-[0.05em] text-[#6f6f6f] mb-2">
-    Sign up with SR Haven </h1>
+  <h1 className="font-[Playfair_Display] lg:text-[2.5rem] text-[1.9rem]  font-normal tracking-[0.05em] text-[#6f6f6f] mb-2">
+    Sign in with SR Haven </h1>
   {/* Form */}
   <form className=" space-y-8">
     {/* Email */}

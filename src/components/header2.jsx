@@ -464,7 +464,7 @@ const Header1  = () =>{
 
    
        <header
-         className={`nav-color bg-[#f7f4e5] border-b  border-b-blac fixed top-0 left-0 w-full z-100 
+         className={`container nav-color bg-[#f7f4e5] border-b  border-b-blac fixed top-0 left-0 w-full z-100 
          ${menuOpen || scrolled ? "bg-[#f7f4e5]" : " "}`}
          >
             <nav
@@ -583,7 +583,7 @@ const Header1  = () =>{
               </div>
               <Link to={"/"} className="logo">
                 <img
-                  className="logoimg"
+                  className="logoimg lg:w-[90px] w-[60px] lg:h-[70px] h-[auto] "
                   src="/images/logo4.png"
                   alt=""
                 />

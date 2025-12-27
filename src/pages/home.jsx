@@ -9,6 +9,7 @@ import MySlider1 from "../components/Slider1"
 import MySlider2 from "../components/slider4"
 import MySlider3 from "../components/slider5"
 import { useState } from "react";
+import Herosec from "../components/herosec"
 
 
 
@@ -37,7 +38,7 @@ const toggleDropdown = () => {
      <>
      
 
-     <Header/>
+    <Herosec/>
       
       <div className="container cn3 ">
         <div className="lg:px-18 px-3">
@@ -154,36 +155,24 @@ const toggleDropdown = () => {
           </div>
           </div>
 
-    
-
-
           <div class="slider lg:mt-13 mt-10 ">
-
             <MySlider1/>
           </div>
 
-          
         </div>
         <div className="px-3">
           <div className="row cn4">
-
-            <div className="col offers  text-center">
+          <div className="col offers  text-center">
               <p >Special Offers </p>
               <p class="p2">  Enjoy specially curated offers to enhance your experience at SR Haven. </p>
               <p>  </p>
               <button className=" btn-explore">
                 Explore 
               </button>
-
-            </div>
-
-            
           </div>
-
-
-
+          </div>
         </div>
-
+        
         <div className="container">
          <div className="  lg:px-18 px-3">
           <div

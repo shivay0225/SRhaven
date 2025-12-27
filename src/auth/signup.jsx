@@ -11,7 +11,7 @@ const Signup = () =>{
         <>
         <Header1/>
        
-      <div className="cn3">
+      <div className="container cn3">
         <div className="flex py-12 justify-center">
 
         <div className="w-full  max-w-2xl  lg:pt-26 pt-22 px-6 text-center">

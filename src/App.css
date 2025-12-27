@@ -12,34 +12,92 @@
     object-fit: contain;
     background-position: center;
 }
+.cn1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 21%; /* adjust darkness height */
+  background: linear-gradient(
+    to bottom,
+    rgba(88, 88, 88, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
 
 
 
-.logoimg {
+
+
+
+.font-royal {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  color: #f5f3f0;
+font-size: 1.2rem;
+
+  -webkit-font-smoothing: antialiased;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+
+.all:hover .font-royal{
+color: black;
+}
+
+.all.nav-active .font-royal{
+    color: black;
+}
+
+
+.logo {
+  position: relative;
+  width: fit-content;
+}
+
+.logoimg-white {
     height: 70px;
     width: 90px;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out
   
 }
 
-.logoimg:hover {
-
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-    transform: scale(1.05);
+.logoimg-black {
+   opacity: 0;
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.1s ease-in-out;
+    height: 70px;
+    width: 90px;
 }
 
+
+
+/* hover + scroll + menuOpen */
+.all:hover .logoimg-white,
+.all.nav-active .logoimg-white {
+  opacity: 0;
+}
+
+.all:hover .logoimg-black ,
+.all.nav-active .logoimg-black  {
+  opacity: 1;
+}
 .bt-book {
-
     background-color: #ad2132;
-
     color: white;
     border: 0;
     padding: 10px 30px 10px 30px;
-
 }
 
 .cn2 {
     position: absolute;
- width: 85%;
+    width: 85%;
     bottom: 4%;
 }
 
@@ -56,7 +114,7 @@
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 6px;
-       padding-right :10px;
+    padding-right :10px;
 }
 
 .logoimg2 {
@@ -492,6 +550,159 @@ font-family: "Playfair Display", sans-serif;
 .card-img:hover img {
   transform: scale(1.1);     /* zoom in */
 }
+
+
+.hero-banner{
+  position: relative;
+  background-image: url("/images/hotels/Manali1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.hero-banner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+
+.hero-banner2{
+  position: relative;
+  background-image: url("/images/hotels/masoori1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.hero-banner2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+
+.hero-banner3{
+  position: relative;
+  background-image: url("/images/hotels/dharamshala1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.hero-banner3::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+.hero-banner4{
+  position: relative;
+  background-image: url("/images/hotels/dhalousie1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.hero-banner4::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+
+
+.hero-banner5{
+  position: relative;
+  background-image: url("/images/hotels/nainital1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.hero-banner5::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
+.hero-banner6{
+  position: relative;
+  background-image: url("/images/hotels/darjleeng1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Top Small Gradient Overlay */
+.hero-banner6::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%; /* adjust darkness height */
+  background: linear-gradient(
+  to bottom,
+  rgba(56, 56, 56, 0.853),
+    rgba(66, 66, 66, 0) 
+  );
+  pointer-events: none;
+}
 @media only screen and (max-width:768px){
 
   .nav-color {
@@ -505,7 +716,7 @@ font-family: "Playfair Display", sans-serif;
     transition:  ease-in-out none!important;
 
 }
-   .logoimg {
+   .logoimg-white, .logoimg-black {
         width: 60px;
         height: auto;
         /* margin-left: 60px; */  

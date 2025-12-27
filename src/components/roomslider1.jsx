@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from "react-router-dom";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,7 +10,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
-export default function MySlider1() {
+export default function RoomSlider1() {
   return (
     <>
       <Swiper
@@ -43,21 +42,17 @@ export default function MySlider1() {
           className="card  bg-transparent "
         >
           <div className="card-img">
-           <Link to ="/hotelmanali" ><img
-              src="/images/hotels/Manali.jpg"
+            <img
+              src="/images/rooms/suites1.jpg"
               className="Manaliimg"
               alt="..." 
             />
-            </Link> 
           </div>
           <div className="card-body pb-5 ">
-          
-              <Link to="/hotelmanali" > 
-               <p className="p1 text-[1.3rem] ps-3 pt-3">
+            <p className="p1 text-[1.3rem] ps-3 pt-3">
               {" "}
-              The SR Haven <br/> Manali (Himacahal Pradesh){""}
+            SUITES <br/> <span> EXPLORE</span>
             </p>
-            </Link> 
            
           </div>
         </div>
@@ -67,109 +62,95 @@ export default function MySlider1() {
           className="card bg-transparent"
         >
           <div className="card-img">
-           <Link to={"/hotelmasoori"}> <img
-              src="/images/hotels/masouri.jpg"
-              className="Manaliimg"
-              alt="..."
-            />
-            </Link>
-          </div>
-          <div className="card-body pb-5">
-        <Link to={"hotelmasoori"}> <p className="p1 text-[1.3rem] ps-3 pt-3">
-              {""}
-              The SR Haven <br /> Masoori (Uttarakhand)
-            </p>
-            </Link>
-            
-          </div>
-        </div>
-      </div></SwiperSlide>
-        <SwiperSlide>  
-          
-           <div className="">
-            <Link to={"/hoteldharamshala"}>
-        <div
-          className="card bg-transparent "
-        >
-          <div className="card-img">
             <img
-              src="/images/hotels/dharamshalaimg.jpg"
+              src="/images/rooms/room1.jpg"
               className="Manaliimg"
               alt="..."
             />
           </div>
           <div className="card-body pb-5">
-          <p className="p1 text-[1.3rem] ps-3 pt-3">
-              {" "}
-              The SR Haven <br /> Dharamshala (HimachalPradesh)
-            </p>
-          </div>
-        </div>
-        </Link>
-      </div></SwiperSlide>
-        <SwiperSlide>     <div className="">
-
-          <Link to={"/hoteldhalousie"}>
-        <div
-          className="card bg-transparent"
-        >
-          <div className="card-img">
-            <img
-              src="/images/hotels/dhalousi.jpg"
-              className="Manaliimg w-[100%] h-[400px] object-cover"
-              alt="..."
-            />
-          </div>
-          <div className="card-body pb-5 ">
-          <p className="p1 text-[1.3rem] ps-3 pt-3">
-              {""}
-              The SR Haven <br /> Dhalousie (HimachalPradesh)
-            </p>
-          </div>
-        </div>
-        </Link>
-      </div></SwiperSlide>
-        <SwiperSlide>     <div className="">
-           <Link to={"/hotelnainital"}>
-        <div
-          className="card bg-transparent"
-        >
-          <div className="card-img">
-            <img
-              src="/images/hotels/nainital.jpg"
-              className="Manaliimg"
-              alt="..."
-            />
-          </div>
-          <div className="card-body pb-5  ">
-           <p className="p1 text-[1.3rem] ps-3 pt-3">
-              {" "}
-              The SR Haven <br /> Nainital – Bhimtal- (Uttarakhand)
-            </p>
-          </div>
-        </div>
-        </Link>
-      </div></SwiperSlide>
-        <SwiperSlide>  <div className="">
-            <Link to={"/hoteldarjleeng"}>
-        <div
-          className="card bg-transparent "
-        >
-          <div className="card-img">
-            <img
-              src="/images/hotels/darjleeng.jpg"
-              className="Manaliimg"
-              alt="..."
-            />
-          </div>
-          <div className="card-body pb-5 ">
          <p className="p1 text-[1.3rem] ps-3 pt-3">
               {""}
-              The SR Haven <br/> Darjeeling (West Bengal)
+              PREMIER GARDEN VIEW ROOM <br /> <span> EXPLORE</span>
             </p>
           </div>
         </div>
-        </Link>
+      </div></SwiperSlide>
+        <SwiperSlide>   <div className="">
+        <div
+          className="card bg-transparent "
+        >
+          <div className="card-img">
+           <img
+              src="/images/rooms/room2.jpg"
+              className="Manaliimg"
+              alt="..."
+            />
+          </div>
+          <div className="card-body pb-5">
+          <p className="p1 text-[1.3rem] ps-3 pt-3">
+              {" "}
+              PREMIER POOL VIEW ROOM <br /> <span> EXPLORE</span>
+            </p>
+          </div>
+        </div>
+      </div></SwiperSlide>
+        <SwiperSlide>     <div className="">
+        <div
+          className="card bg-transparent"
+        >
+          <div className="card-img">
+           <img
+              src="/images/rooms/deluxeroom1.jpg"
+              className="Manaliimg"
+              alt="..."
+            />
+          </div>
+          <div className="card-body pb-5 ">
+          <p className="p1 text-[1.3rem] ps-3 pt-3">
+              {""}
+             DELUXE GARDEN VIEW ROOM <br /> <span> EXPLORE</span>
+            </p>
+          </div>
+        </div>
+      </div></SwiperSlide>
+        <SwiperSlide>     <div className="">
+        <div
+          className="card bg-transparent"
+        >
+          <div className="card-img">
+              <img
+              src="/images/rooms/deluxeroom.jpg"
+              className="Manaliimg"
+              alt="..."
+            />
+          </div>
+          <div className="card-body pb-5 ">
+          <p className="p1 text-[1.3rem] ps-3 pt-3">
+              {""}
+            SUPER DELUXE ROOM <br /> <span> EXPLORE</span>
+            </p>
+          </div>
+        </div>
+      </div></SwiperSlide>
+        <SwiperSlide>  <div className="">
+        <div
+          className="card bg-transparent "
+        >
+          <div className="card-img">
+               <img
+              src="/images/rooms/room3.jpg"
+              className="Manaliimg"
+              alt="..."
+            />
+          </div>
+          <div className="card-body pb-5 ">
+          <p className="p1 text-[1.3rem] ps-3 pt-3">
+              {""}
+              FAMILY ROOM <br /> <span> EXPLORE</span>
+            </p>
+          </div>
+        </div>
       </div></SwiperSlide>
       
       </Swiper>
